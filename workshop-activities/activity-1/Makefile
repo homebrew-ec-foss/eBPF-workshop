@@ -8,8 +8,8 @@ all: $(TARGET) $(BPF_OBJ)
 .PHONY: $(TARGET)
 
 $(TARGET): $(BPF_OBJ)
-        sudo rm -f $(BPF_PATH)
-        sudo bpftool prog load $(BPF_OBJ) $(BPF_PATH) autoattach
+        rm -f $(BPF_PATH)
+        bpftool prog load $(BPF_OBJ) $(BPF_PATH) autoattach
 
 $(BPF_OBJ): %.o: %.c
         clang \

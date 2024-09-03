@@ -17,4 +17,7 @@ sudo bpftool prog tracelog
 ```
 
 ## 2. System Call Counting:
-We need to run the same commands, just run the makefile provided in this directory ```make```
+We need to run the same commands, just run the makefile provided in this directory
+ ```
+sudo make
+```
